@@ -50,6 +50,7 @@ body {
     padding: 40px;
     max-width: 500px;
     width: 100%;
+    border-radius: 20px;
 }
 
 .header-form {
@@ -588,11 +589,11 @@ body {
         font-size: 24px;
     }
 
-    .header-glass-morph{
+    .header-glass-morph {
         width: 100%;
     }
 
-    .justifystart{
+    .justifystart {
         justify-content: center;
     }
 
