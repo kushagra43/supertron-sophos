@@ -27,11 +27,13 @@ body {
 .header-container {
     padding: 60px 0 0 0;
     display: flex;
+    margin-bottom: 60px;
 }
 
 .header-text-container {
     max-width: 500px;
     width: 100%;
+    flex: 1;
 }
 
 .header-img {
@@ -40,9 +42,39 @@ body {
     margin-bottom: -40px;
 }
 
-.header-text-container {
-    margin-bottom: 60px;
+.form-container {
+    background-image: url('Form\ back.png');
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
 }
+
+.header-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-glass-morph {
+    background: rgba(16, 16, 16, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(17.5px);
+    -webkit-backdrop-filter: blur(17.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 40px;
+    width: 100%;
+}
+
+.header-input {
+    background: rgba(38, 41, 43, 0.36);
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    padding: 20px;
+}
+
 
 /* Brands division */
 .Brands-container {
@@ -231,6 +263,22 @@ body {
 
 
 /* Common */
+::placeholder {
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
 .flex {
     display: flex;
 }
@@ -252,8 +300,12 @@ body {
     justify-content: space-between;
 }
 
-.justifyend {
+.justifystart {
     justify-content: flex-start;
+}
+
+.justifyend {
+    justify-content: flex-end;
 }
 
 .allignend {
@@ -429,6 +481,16 @@ body {
         flex-direction: column;
     }
 
+    .header-text-container {
+        margin: 0 !important;
+    }
+
+    .form-container {
+        margin-left: 0 !important;
+        width: 100%;
+        margin-top: 40px;
+    }
+
     .flex-2 {
         flex-direction: column;
     }
@@ -524,6 +586,14 @@ body {
 
     .subheadingwhite {
         font-size: 24px;
+    }
+
+    .header-glass-morph{
+        width: 100%;
+    }
+
+    .justifystart{
+        justify-content: center;
     }
 
 }
@@ -657,6 +727,10 @@ body {
     .whiteheadingnormal {
         width: 100%;
     }
+
+    .footer-container {
+        margin: 0;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -712,22 +786,22 @@ body {
         font-size: 14px;
     }
 
-    .about-logo{
+    .about-logo {
         height: 200px;
     }
 
     .key-benefits-container {
-        margin-top: -240px
+        margin-top: -300px
     }
 
-    .slide{
+    .slide {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 180px;
+        min-height: 240px;
     }
 
-    .Benefits-img{
+    .Benefits-img {
         width: 30%;
         margin: 0px 0px 20px 0px;
     }
